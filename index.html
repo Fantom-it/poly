@@ -56,7 +56,7 @@
                         <a class="header__linkr" href="/ratings.html">
                             Рейтинги                                                
                         </a>
-                            <img class="header__logo2" src="../img/arrow.svg">  
+                           <!-- <img class="header__logo2" src="../img/arrow.svg">  -->  
                     </li> 
     
                    
@@ -77,8 +77,8 @@
             <div class="dropdownv2">
     
                 <li class="header__item">
-                <a class="header__link" href="/forecasts/forecasts.html" style="margin-left: 19px;">Прогнозы </a>
-                 <img class="header__logo3" src="../img/arrow.svg">
+                <a class="header__link header__link-arrow" href="/forecasts/forecasts.html" style="margin-left: 19px;">Прогнозы </a>
+                <!--<img class="header__logo3" src="../img/arrow.svg"> --> 
                 </li>
     
             <div id="maDropdownv2" class="dropdownv2-contentv2">
@@ -101,8 +101,8 @@
                 <div class="dropdownv3">
 
                     <li class="header__item">
-                        <a class="header__link" href="knowledge_base" style="margin-left: 9px">База знаний</a>
-                        <img class="header__logo3" src="img/arrow.svg">
+                        <a class="header__link header__link-arrow" href="knowledge_base" style="margin-left: 9px">База знаний</a>
+                       <!--<img class="header__logo3" src="img/arrow.svg"> --> 
                     </li>
 
                     <div id="maDropdownv3" class="dropdownv3-contentv3">
@@ -116,8 +116,15 @@
             </ul>
         </nav>
 
-        <div class="dropdown-menu">
-           <button onclick="myFunction()"> <img  class="menu" src="img/menuV2.png" alt=""> </button> 
+  <!-- 
+    <div class="dropdown-menu">
+             
+             <img class="menu" src="img/menuV2.png" alt=""> 
+           
+             <button onclick="myFunction()" class="menu">
+        
+             </button>   
+             
             <div id="myDropdown-menu" class="dropdown-content-menu">
                 <a href="#">Ссылка 1</a>
                 <a href="#">Ссылка 2</a>
@@ -125,9 +132,35 @@
               </div>
         </div>
             
+  -->   
+  
+ 
+   <button onclick="myFunction()" class="dropbtn-menu"></button>  
+    <div id="myDropdown-menu" class="dropdown-content-menu">
+        <div class="dropdown">
+            <a onclick="myFunctionMr()" class="header__link-arrow-menu" href="/ratings.html">Рейтинги</a>
+            <div id="maDropdown-m-r" class="dropdown-content-m-r">
+                <a href="/forecasts/football.html">Футбол</a>
+                <a href="/forecasts/hockey.html">Хоккей</a>
+                <a href="/forecasts/basketball.html">Баскетбол</a>
+                <a href="/forecasts/tennis.html">Теннис</a>
+                <a href="/forecasts/martial.html">Единоборства</a>
+                <a href="/forecasts/mma.html">ММА</a>
+                <a href="/forecasts/pop-mma.html">Поп-ММА</a>
+            </div>
+        </div>
+        
+            
+        <a class="header__link header__link-arrow-menu" href="/forecasts/forecasts.html">Прогнозы </a>
+      <a href="#">Приложения</a>
+      <a href="#">Бонусы</a>
+      <a href="#">Агентство</a>
+      <a class="header__link header__link-arrow-menu" href="knowledge_base">База знаний</a>
+    </div>
+  </div>
 
     </header>
-</div>
+
 
 
 
@@ -141,8 +174,135 @@
         </div>
     </a>
 
-    
-   
+    <div class="front-content">
+        
+        <form class="form" action="/main" method="post">
+                <input class="form__input" type="text" name="value" placeholder="Введите поисковый запрос">
+                <button class="form__button" type="submit"></button>
+        </form>
+
+        <div class="banner-1">
+                <img src="img/banners/баннер 1.png" alt="">
+        </div>
+
+        <p class="item__applications_bookmakers">Приложения букмекеров:</p>
+
+
+    <div class="container-9">
+
+        <ul class="container-9__list">
+            <li class="container-9__li">
+                <div class="container-9__div">
+                    <a class="container-9__item">Приложения Tennisi</a>
+                </div>
+
+            </li>
+
+            <li class="container-9__li">
+                <div class="container-9__div">
+                    <a href="https://www.fon.bet/" class="container-9__item">Приложения Fonbet</a>
+                </div>
+
+            </li>
+
+            <li class="container-9__li">
+                <div class="container-9__div">
+                    <a class="container-9__item">Приложения Вулкан Бет</a>
+                </div>
+
+            </li>
+
+            <li class="container-9__li">
+                <div class="container-9__div">
+                    <a class="container-9__item">Приложения 1Xставка</a>
+                </div>
+
+            </li>
+
+            <li class="container-9__li">
+                <div class="container-9__div">
+                    <a class="container-9__item">Приложения Berfair</a>
+                </div>
+
+            </li>
+        </ul>
+
+    </div>
+
+
+    <div class="banner-2">
+        <img src="img/banners/баннер 2.svg" alt="">
+    </div>
+
+    <p class="item__recom">Мы рекомендуем:</p>
+
+    <div class="container-11">
+
+        <div class="container-11__1xbet">
+
+            <div class="container-11__1xbet-1">
+                <img src="img/bookmakers/1xbet.svg" alt="">
+                <p class="container-11__item">5/5</p>
+                <img class="container-11__arrow" src="img/arrow.svg" alt="">
+            </div>
+
+            <div class="container-11__1xbet-2">
+                <a class="container-11__1xbet-2__item-1" href="">Обзор</a>
+                <a class="container-11__1xbet-2__item-2" href="">Caйт</a>
+            </div>
+
+        </div>
+
+        <div class="container-11__Ubet">
+
+            <div class="container-11__Ubet-1">
+                <img src="img/bookmakers/UbetV2.svg" alt="">
+                <p class="container-11__item">4/5</p>
+                <img class="container-11__arrow" src="img/arrow.svg" alt="">
+            </div>
+
+            <div class="container-11__Ubet-2">
+                <a class="container-11__1xbet-2__item-1" href="">Обзор</a>
+                <a class="container-11__1xbet-2__item-2" href="">Caйт</a>
+            </div>
+
+        </div>
+
+        <div class="container-11__fonbet">
+
+            <div class="container-11__fonbet-1">
+                <img src="img/bookmakers/fonbet.svg" alt="">
+                <p class="container-11__item">5/4</p>
+                <img class="container-11__arrow" src="img/arrow.svg" alt="">
+            </div>
+
+            <div class="container-11__fonbet-2">
+                <a class="container-11__1xbet-2__item-1" href="">Обзор</a>
+                <a class="container-11__1xbet-2__item-2" href="">Caйт</a>
+            </div>
+
+        </div>
+
+        <div class="container6-v2">
+            <p class="container6-v2__item">Весь список  </p>
+            <div class="arrow-1" style="margin-top: 30px;">
+                <div></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="banner-3">
+        <img src="img/banners/баннер 3.svg" alt="">
+    </div>
+
+        </div>  
+
+
+
+
+
+
 
 
 
@@ -166,28 +326,27 @@
 
 
     <div class="container3">
-        <div class="container3__set">
+        
          <!--
-            <ul class="container3__set__list">
-          <li>
-            
-          </li> 
-          <li>
-            
-          </li> 
-          <li>
-            
-          </li>
-          <li>
-            
-          </li>
-            </ul>
+           <div class="container3__set"> </div>
          -->   
-            <a class="container3__link">Контора</a>
-            <a class="container3__link">Рейтинг</a>
-            <a class="container3__link">Бонусы</a>
-            <a class="container3__link">Отзывы</a>
-        </div>
+         
+          
+               <a class="container3__link1">Контора</a>
+           
+           
+                <a class="container3__link2">Рейтинг</a>
+           
+           
+                <a class="container3__link3">Бонусы</a>
+          
+            
+                <a class="container3__link-last">Отзывы</a>
+            
+            
+            
+            
+       
             
         
     </div>
@@ -200,17 +359,24 @@
          
 
         <div class="container4__list1"> 
-
-            <a href="
-        ">
-        <img class="container4__1xbet" src="img/bookmakers/1xbet.svg" alt="">
-             </a>
-
-        <img class="container4__img2" src="img/звезда.svg">
-        <p class="container4__item1">4,5</p>
+        
+          <a href="
+          ">
+          <img class="container4__1xbet" src="img/bookmakers/1xbet.svg" alt="">
+        </a>
+        
+             <div class="container4__ratings">
+                <img class="container4__img2" src="img/звезда.svg">
+                <p class="container4__item1">4,5</p>
+             </div>
+        
         <p class="container4__item2">10000 руб.</p>
-        <img class="container4__img3" src="img/Vector.svg">
-        <p class="container4__item-int">4</p>
+
+        <div class="container4__messages">
+            <img class="container4__img3" src="img/Vector.png">
+            <p class="container4__item-int">4</p>
+        </div>
+        
 
     </div>
   <!--    <div class="container4__button1">
@@ -238,7 +404,7 @@
         </div>
     </a>
 
-    <a class="container4__link-button2" href="" style="text-decoration: none; margin-left: 2.333%; margin-right: 1%;">
+    <a class="container4__link-button2" href="">
         <div class="container4__button2">
             <p class="container4__button2__text">Сайты
               </p>
@@ -258,12 +424,22 @@
         ">
         <img class="container4__1xbet" src="img/bookmakers/olimpbet.svg" alt="">
              </a>
+             <div class="container4__ratings">
+                <img class="container4__img2" src="img/звезда.svg">
+                 <p class="container4__item1">4,5</p>
+             </div>
 
-        <img class="container4__img2" src="img/звезда.svg">
-        <p class="container4__item1">4,5</p>
-        <p class="container4__item2">10000 руб.</p>
-        <img class="container4__img3" src="img/Vector.svg">
-        <p class="container4__item-int">4</p>
+             <p class="container4__item2">10000 руб.</p>
+
+             <div class="container4__messages">
+
+                <img class="container4__img3" src="img/Vector.svg">
+                 <p class="container4__item-int">4</p>
+
+             </div>
+        
+        
+        
 
     </div>
 
@@ -276,7 +452,7 @@
             </div>
         </a>
     
-        <a class="container4__link-button2" href="" style="text-decoration: none; margin-left: 2.333%; margin-right: 1%;">
+        <a class="container4__link-button2" href="">
             <div class="container4__button2">
                 <p class="container4__button2__text">Сайты
                   </p>
@@ -295,11 +471,19 @@
         <img class="container4__1xbet" src="img/bookmakers/fonbet.svg" alt="">
              </a>
 
-        <img class="container4__img2" src="img/звезда2.png">
-        <p class="container4__item1">5</p>
-        <p class="container4__item2">10000 руб.</p>
-        <img class="container4__img3" src="img/Vector.svg">
-        <p class="container4__item-int">4</p>
+        <div class="container4__ratings">
+                <img class="container4__img2" src="img/звезда.svg">
+                 <p class="container4__item1">5</p>
+             </div>
+
+             <p class="container4__item2">10000 руб.</p>
+
+             <div class="container4__messages">
+
+                <img class="container4__img3" src="img/Vector.svg">
+                 <p class="container4__item-int">4</p>
+                 
+             </div>
 
     </div>
 
@@ -312,7 +496,7 @@
             </div>
         </a>
     
-        <a class="container4__link-button2" href="" style="text-decoration: none; margin-left: 2.333%; margin-right: 1%;">
+        <a class="container4__link-button2" href="">
             <div class="container4__button2">
                 <p class="container4__button2__text">Сайты
                   </p>
@@ -332,11 +516,19 @@
         <img class="container4__1xbet" src="img/bookmakers/pari_match.svg" alt="">
              </a>
 
-        <img class="container4__img2" src="img/звезда2.png">
-        <p class="container4__item1">5</p>
-        <p class="container4__item2">10000 руб.</p>
-        <img class="container4__img3" src="img/Vector.svg">
-        <p class="container4__item-int">4</p>
+             <div class="container4__ratings">
+                <img class="container4__img2" src="img/звезда.svg">
+                 <p class="container4__item1">5</p>
+             </div>
+
+             <p class="container4__item2">10000 руб.</p>
+
+             <div class="container4__messages">
+
+                <img class="container4__img3" src="img/Vector.svg">
+                 <p class="container4__item-int">4</p>
+                 
+             </div>
 
     </div>
 
@@ -349,7 +541,7 @@
             </div>
         </a>
     
-        <a class="container4__link-button2" href="" style="text-decoration: none; margin-left: 2.333%; margin-right: 1%;">
+        <a class="container4__link-button2" href="">
             <div class="container4__button2">
                 <p class="container4__button2__text">Сайты
                   </p>
@@ -369,11 +561,19 @@
         <img class="container4__1xbet" src="img/bookmakers/1xctabka.svg" alt="">
              </a>
 
-        <img class="container4__img2" src="img/звезда2.png">
-        <p class="container4__item1">5</p>
-        <p class="container4__item2">10000 руб.</p>
-        <img class="container4__img3" src="img/Vector.svg">
-        <p class="container4__item-int">4</p>
+             <div class="container4__ratings">
+                <img class="container4__img2" src="img/звезда.svg">
+                 <p class="container4__item1">5</p>
+             </div>
+
+             <p class="container4__item2">10000 руб.</p>
+
+             <div class="container4__messages">
+
+                <img class="container4__img3" src="img/Vector.svg">
+                 <p class="container4__item-int">4</p>
+                 
+             </div>
 
     </div>
 
@@ -386,7 +586,7 @@
             </div>
         </a>
     
-        <a class="container4__link-button2" href="" style="text-decoration: none; margin-left: 2.333%; margin-right: 1%;">
+        <a class="container4__link-button2" href="">
             <div class="container4__button2">
                 <p class="container4__button2__text">Сайты
                   </p>
@@ -395,16 +595,28 @@
     
     </div>
 
-   
+    </div>
+
+    
+
+
+    
+
+    
+
+
+</div>
     
 </div> <!--main-content-->
 
-  
+    
 </div>
 
 </div>
 
 <script src="js/main.js"></script>
+
+
 
 </body>
 </html>
