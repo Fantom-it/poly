@@ -1,13 +1,10 @@
-body {
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  width: 100%;
-}
 .body {
   font-family: "Inter", sans-serif;
   font-weight: 600;
-  width: 100%;
+  /* width: 100%; */
   background: #f5f5f5;
+  margin: 0 auto;
+  display: flex;
 }
 
 .full-content {
@@ -170,6 +167,24 @@ body {
   margin: -1px;
   /* position: relative; */
 }
+.header__linkr::after {
+  position: absolute;
+  content: url(../img/arrow.svg);
+  padding-top: 3px;
+  margin-left: 5px;
+}
+.header__link-arrow::after {
+  position: absolute;
+  content: url(../img/arrow.svg);
+  padding-top: 3px;
+  margin-left: 5px;
+}
+.header__link-arrow-menu::after {
+  position: absolute;
+  content: url(../img/arrow.svg);
+  padding-top: 1px;
+  margin-left: 5px;
+}
 /*svg {
     fill:black;
 }
@@ -279,6 +294,9 @@ svg:hover {
 /*.show {display:block;} */
 .dropdown:hover .dropdown-content {
   display: block;
+  transition-property: all;
+  transition-timing-function: ease;
+  transition-duration: 1s;
 }
 .dropdownv2:hover .dropdownv2-contentv2 {
   display: block;
@@ -300,10 +318,6 @@ svg:hover {
   margin: -5px;
 }
 
-.menu {
-  display: none;
-}
-
 .dropbtn {
   background-color: #3498db;
   color: white;
@@ -318,11 +332,32 @@ svg:hover {
 .dropbtn:focus {
   background-color: #2980b9;
 }
-
+.menu {
+  display: none;
+  width: 35px;
+  height: 35px;
+  background: url(../img/menuV2.png);
+  border: none;
+}
 /* Контейнер <div> - необходим для размещения выпадающего содержимого */
 .dropdown-menu {
   position: relative;
   display: inline-block;
+  margin-right: 2%;
+  display: none;
+
+  background: #2980b9;
+}
+
+.dropbtn-menu {
+  display: none;
+  margin: 0;
+  padding: 0;
+  background: url(../img/menuV2.png);
+  width: 35px;
+  height: 35px;
+  margin-right: 2%;
+  border: none;
 }
 
 /* Выпадающее содержимое (скрыто по умолчанию) */
@@ -330,9 +365,15 @@ svg:hover {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  min-width: 100%;
+  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
   z-index: 1;
+  margin: 0;
+  padding: 0;
+  margin-left: 0px;
+  margin-top: 338px;
+  transition: top 2s;
+  overflow: auto;
 }
 
 /* Ссылки внутри выпадающего списка */
@@ -341,6 +382,7 @@ svg:hover {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  border-bottom: 1px solid #5a575748;
 }
 
 /* Изменение цвета выпадающих ссылок при наведении курсора */
@@ -350,6 +392,30 @@ svg:hover {
 
 /* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
 .show-menu {
+  display: block;
+}
+.dropdown-content-m-r {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content-m-r a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.dropdown-content-m-r a:hover {
+  background-color: #ddd;
+}
+
+/* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+.show-m-r {
   display: block;
 }
 
@@ -362,6 +428,7 @@ svg:hover {
   display: flex;
   align-items: center;
   background: #2f0fb2;
+  margin-right: 0px;
   /* background: url(../img/banners/banner\ 1bannerv1.svg); */
 }
 .container-banner-t {
@@ -418,6 +485,7 @@ svg:hover {
   margin: 0 auto;
   width: 58.5%;
   margin-left: 38px;
+  display: flex;
 }
 .container3__set__list {
   padding: 0;
@@ -425,12 +493,45 @@ svg:hover {
   list-style-type: none;
   display: flex;
 }
-.container3__link {
-  font-size: 16px;
-  margin-right: 144px;
+.container3-4__div {
+  display: flex;
+  width: 160px;
+  background: #c48383;
+  margin-right: 150px;
+  margin-right: 21%;
+}
 
+.container3__link1,
+.container3__link2,
+.container3__link3 {
+  position: absolute;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  /* margin-right: 144px; */
   color: #ea8d02;
   text-decoration: none;
+}
+.container3__link1 {
+  margin-left: 2%;
+  margin-left: 39px;
+}
+.container3__link2 {
+  margin-left: 13%;
+  margin-left: 248px;
+}
+.container3__link3 {
+  margin-left: 23.8%;
+  margin-left: 455px;
+}
+.container3__link-last {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ea8d02;
+  text-decoration: none;
+  margin-left: 55%;
+  margin-left: 658px;
 }
 
 .container4 {
@@ -456,19 +557,19 @@ svg:hover {
   display: flex;
   align-items: center;
   width: 388px;
-  width: 46.392%;
+  /* width: 46.392%; */
   height: 50px;
-  width: 22.3%;
+  /* width: 22.3%; */
   /*  background: rgb(38, 146, 85); */
-  margin-left: 48.7%;
+  margin-left: 41.15%;
+  margin-left: 783px;
 }
 
 .container4__1xbet {
   width: 170px;
   position: absolute;
   position: relative;
-
-  margin-left: 30px;
+  margin-left: 2.5%;
   /* background-image: url(../img/bookmakers/1xbet.svg); */
 }
 .container4__olimp {
@@ -556,34 +657,45 @@ svg:hover {
   background: url(../img/bookmakers/bwin.png);
 }
 
+.container4__ratings {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  margin-left: 13%;
+  margin-left: 248px;
+}
+
 .container4__img2 {
   width: 115px;
   height: 20px;
-  margin-left: 250px;
-  margin-left: 52px;
-  margin-left: 4.083%;
+  margin-left: 13%;
+  margin: 0;
 }
 .container4__item1 {
   margin-left: 11px;
-  margin-left: 0.917%;
+  margin-left: 5%;
 }
 .container4__item2 {
+  position: absolute;
   white-space: nowrap;
   margin-left: 53px;
-  margin-left: 4.417%;
+  margin-left: 23.8%;
+  margin-left: 455px;
 }
 .container4__item2v2 {
   white-space: nowrap;
   margin-left: 73px;
-  margin-left: 6.083%;
+  margin-left: 23.8%;
+}
+.container4__messages {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  margin-left: 35%;
+  margin-left: 658px;
 }
 .container4__img3 {
-  /* width: 30px;
-    height: 42px; */
-  margin-left: 107px;
-  margin-left: 8.917%;
 }
-
 .container4__item-int {
   margin-left: 6px;
 }
@@ -592,8 +704,7 @@ svg:hover {
 }
 .container4__link-button2 {
   text-decoration: none;
-  margin-left: 2.333%;
-  margin-right: 1%;
+  margin-left: 7.2%;
 }
 .container4__button1 {
   margin: 0;
@@ -620,7 +731,6 @@ svg:hover {
   display: flex;
   align-items: center;
   background: #fcc341;
-  margin-left: 28px;
   margin-left: 0;
   margin-right: 0px;
 }
@@ -750,7 +860,20 @@ h1 {
     margin-left: 2%;
   }
 }
-
+@media (width < 1670px) {
+  .container4__list2 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 388px;
+    /* width: 46.392%; */
+    height: 50px;
+    /* width: 22.3%; */
+    /*  background: rgb(38, 146, 85); */
+    margin-left: 47.7%;
+    margin-left: 783px;
+  }
+}
 @media (width < 1620px) {
   .header__logo {
     margin-left: 0.9%;
@@ -769,15 +892,78 @@ h1 {
     height: 71px;
     margin-top: 2px;
   }
-  .container3__link {
-    margin-right: 20%;
+  .container3__link1 {
+    margin-left: 39px;
+    margin-left: 2.5%;
+  }
+  .container3__link2 {
+    margin-left: 248px;
+    margin-left: 15.5%;
+  }
+  .container3__link3 {
+    margin-left: 455px;
+    margin-left: 28.5%;
+  }
+  .container3__link-last {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ea8d02;
+    text-decoration: none;
+    margin-left: 658px;
+    margin-left: 54.45%;
   }
   .container4 {
     width: 99.99%;
   }
+  .container4__ratings {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-left: 248px;
+    margin-left: 15.5%;
+  }
+  .container4__item2 {
+    position: absolute;
+    white-space: nowrap;
+    margin-left: 53px;
+    margin-left: 455px;
+    margin-left: 28.5%;
+  }
+  .container4__messages {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-left: 658px;
+    margin-left: 41.45%;
+  }
+  .container4__list2 {
+    margin-left: 49%;
+  }
   .front-content {
     margin-left: 76.7%;
   }
+}
+@media (width < 1520px) {
+  .container4__list2 {
+    margin-left: 48%;
+  }
+}
+@media (width < 1470px) {
+  .container4__list2 {
+    margin-left: 47%;
+  }
+}
+@media (width < 1420px) {
+  .container4__list2 {
+    margin-left: 46%;
+  }
+}
+@media (width < 1380px) {
+  .container4__list2 {
+    margin-left: 45.5%;
+  }
+}
+@media (width < 1350) {
 }
 @media (width < 1024px) {
   .main-content__content {
@@ -822,6 +1008,8 @@ h1 {
   }
 }
 @media (width < 500px) {
+  .body {
+  }
   .header__nav {
     display: none;
   }
@@ -836,7 +1024,7 @@ h1 {
   }
 
   .header__logo {
-    margin-left: 8%;
+    margin-left: 3%;
 
     /*  width: 222px;
       height: 37px;*/
@@ -868,6 +1056,10 @@ h1 {
     font-size: 14px;
     margin-right: 20%;
   }
+  .container3__link-last {
+    font-size: 14px;
+    margin-right: 0;
+  }
   .container3__set {
     margin-left: 3%;
   }
@@ -876,8 +1068,15 @@ h1 {
 
     margin-top: 23px;
   }
+  .dropdown-menu {
+    display: flex;
+  }
+
   .menu {
     margin-top: 12px;
+    width: 35px;
+    height: 35px;
+    background: url(../img/menuV2.png);
   }
   .container4__1xbet {
     width: 100px;
@@ -891,6 +1090,9 @@ h1 {
     font-size: 15px;
   }
   .container4__item2 {
+    font-size: 15px;
+  }
+  .container4__item2v2 {
     font-size: 15px;
   }
   .container4__img3 {
@@ -943,6 +1145,7 @@ h1 {
   }
   .container4__link-button2 {
     width: 48%;
+    margin-left: 1.5%;
   }
   .container4__button2__text {
     font-size: 18px;
@@ -950,6 +1153,104 @@ h1 {
   .container4__button2 {
     width: 100%;
     height: 45px;
+  }
+  .container3__link1 {
+    font-size: 13px;
+    margin-left: 39px;
+    margin-left: 2.5%;
+  }
+  .container3__link2 {
+    font-size: 13px;
+    margin-left: 248px;
+    margin-left: 15.5%;
+    margin-left: 30%;
+  }
+  .container3__link3 {
+    font-size: 13px;
+    margin-left: 455px;
+    margin-left: 55%;
+  }
+  .container3__link-last {
+    font-size: 13px;
+    font-weight: 400;
+    color: #ea8d02;
+    text-decoration: none;
+    margin-left: 658px;
+    margin-left: 80%;
+  }
+  .container4 {
+    width: 99.99%;
+  }
+  .container4__ratings {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-left: 248px;
+    margin-left: 30%;
+  }
+  .container4__img2 {
+    width: 70px;
+  }
+  .container4__item1 {
+    font-size: 12px;
+  }
+  .container4__item2 {
+    font-size: 12px;
+  }
+  .container4__img3 {
+    width: 15px;
+  }
+  .container4__item-int {
+    font-size: 12px;
+  }
+  .container4__item2 {
+    position: absolute;
+    white-space: nowrap;
+    margin-left: 53px;
+    margin-left: 455px;
+    margin-left: 55%;
+  }
+  .container4__messages {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-left: 658px;
+    margin-left: 80%;
+  }
+  .dropbtn-menu {
+    display: block;
+  }
+}
+@media (width < 440px) {
+  .container4__1xbet {
+    width: 80px;
+    position: absolute;
+    position: relative;
+    margin-left: 2.5%;
+    /* background-image: url(../img/bookmakers/1xbet.svg); */
+  }
+  .container3__link2 {
+    margin-left: 25%;
+  }
+  .container4__ratings {
+    margin-left: 25%;
+  }
+}
+@media (width < 440px) {
+  .container4 {
+    height: 80px;
+  }
+  .container4__button1 {
+    height: 40px;
+  }
+  .container4__button2 {
+    height: 40px;
+  }
+  .container4__button1__text {
+    font-size: 15px;
+  }
+  .container4__button2__text {
+    font-size: 15px;
   }
 }
 
