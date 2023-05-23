@@ -1007,7 +1007,7 @@ h1 {
     justify-content: space-between;
   }
 }
-@media (width < 500px) {
+@media (width < 700px) {
   .body {
   }
   .header__nav {
